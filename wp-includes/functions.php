@@ -5230,7 +5230,7 @@ function wp_is_stream( $path ) {
 	$wrappers = stream_get_wrappers();
 	$wrappers_re = '(' . join('|', $wrappers) . ')';
 
-	return preg_match( "!^$wrappers_re://!", $path ) === 1;
+	return preg_match( '!^$wrappers_re://!', $path ) === 1;
 }
 
 /**

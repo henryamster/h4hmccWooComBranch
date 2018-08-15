@@ -22,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 ?>
-
+<div class="paper has-text-black auto-width add-padd">
 <p><?php
 	/* translators: 1: user display name 2: logout url */
 	printf(
@@ -62,5 +62,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	 * @deprecated 2.6.0
 	 */
 	do_action( 'woocommerce_after_my_account' );
-
+?>
+</div>
+<?php 
 /* Omit closing PHP tag at the end of PHP files to avoid "headers already sent" issues. */
